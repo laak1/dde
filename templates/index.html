@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to PDF Booklet</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        textarea { width: 90%; max-width: 800px; height: 400px; }
+        button { font-size: 1.2em; padding: 10px 15px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Text to PDF Booklet Converter</h1>
+    <p>Enter your text below. Use <strong>**bold**</strong> for bold text and start a line with <strong>#</strong> for a heading.</p>
+    
+    <form action="/create-pdf" method="post">
+        <div>
+            <textarea name="text_content" placeholder="Enter your text here..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Create and Download PDF</button>
+        </div>
+    </form>
+
+</body>
+</html>
